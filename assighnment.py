@@ -1,0 +1,22 @@
+
+def Savings():
+    firstname = input("please enter your first name: ")
+    print("Hello: " + firstname)
+    salaryinput = input(firstname + "please enter your salary: ")
+    print("total money in acccount: " + salaryinput)
+    waterpayment= input("enter your water payment: ")
+    print("your water payment is: " + waterpayment)
+    electricitypayment = input("enter your electricity payment: ")
+    print("your electricity payment is: " + electricitypayment )
+    rentpayment = input("enter your rent payment:")
+    print("your rent patment is: "+ rentpayment)
+    carPayment = input("enter your car payment: ")
+    print("your car payment is: " + carPayment)
+    insurancepayment = input("enter your isurance payment: ")
+    print("your insurance payment is: " + insurancepayment)
+    YourTotal = int(waterpayment) + int(electricitypayment) + int(rentpayment) + int(carPayment) + int(insurancepayment)
+    print("your total is: " + str(YourTotal))
+    Moneyleft = int(salaryinput) - int(YourTotal)
+    print ("Your deposit left is: " + str(Moneyleft))
+if __name__=="__main__":
+    Savings()
